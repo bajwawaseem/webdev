@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Multimedia</title>
+</head>
+
+<body>
+    <header>
+        <h1>HTML5 Multimedia</h1>
+    </header>
+
+    <main>
+        <p>Multimedia tags in HTML5 are designed to avoid the use of extra plugins to play audio/vedio. <br>
+            Note: HTML5 multimedia tags are not fully implemented yet. </p>
+        
+        <h2>Vedio Tag/Element</h2>
+        <ul>
+            <li>Syntax: &lt;video &nbsp; src=""&gt; &nbsp; &lt;\video&gt; </li>
+            <li>It requires a src attribute, very similar to img tag, to tell the browser were the file is located.</li>
+            <li>Additional attributes:
+                <ul>
+                    <li>width, height</li>
+                    <li>autoplay: video should start as soon as page is loaded</li>
+                    <li>controls: give control to user when to start or stop the video </li>
+                    <li>loop: allow the video to play over an over</li>
+                </ul>
+            </li>
+            <li>The video will only display (as a static picture) and it will not be to playable until we add autoplay or controls attribute</li>
+            <li>autoplay, controls, and loop are boolean variables. If we just write autoplay, it means autoplay="true" </li>
+            <li>Text inside Syntax: &lt;video&gt; ... &lt;\video&gt; is displayed if browser cannot sport the tag</li> 
+        </ul>
+
+        <h2>Examples</h2>
+        <ol>
+            <li>
+                Syntax: &lt;video src="Videos/National_Anthem.mp4" &nbsp; width=20%&gt; &nbsp; Your browser does not support video tag &nbsp; &lt;\video&gt; <br>
+                Video will not play. <br>
+                <video src="Videos/National_Anthem.mp4" width="20%"> Your browser does not support vidio tag </video>
+             </li>
+
+            <li>
+                Syntax: &lt;video src="Videos/National_Anthem.mp4" &nbsp; width=20% &nbsp; autoplay&gt; &nbsp; Your browser does not support video tag &nbsp; &lt;\video&gt;  <br>
+                Video will automatically play (may not play due to browse restrictions) <br>
+                <video src="Videos/National_Anthem.mp4" width="20%" autoplay> Your browser does not support vidio tag </video>
+            </li>
+
+            <li>
+                Syntax: &lt;video src="Videos/National_Anthem.mp4" &nbsp; width=20% &nbsp; controls&gt; &nbsp; Your browser does not support video tag &nbsp; &lt;\video&gt;  <br>
+                User will be able to conrol, when to start or stop video <br>
+                <video src="Videos/National_Anthem.mp4" width="20%" controls> Your browser does not support vidio tag </video>
+            </li>
+
+            <li>
+                Syntax: &lt;video src="Videos/National_Anthem.mp4" &nbsp; width=20% &nbsp; controls &nbsp; autoplay &nbsp; loop&gt; &nbsp; Your browser does not support video tag &nbsp; &lt;\video&gt; <br>
+                Video will automatically play over and over, but the user will be able to stop and than again start the video <br>
+                <video src="Videos/National_Anthem.mp4" width="20%" controls autoplay loop> Your browser does not support vidio tag </video>
+            </li>
+
+            <li>
+                Syntax: &lt;video src="Videos/National_Anthem.mp4" &nbsp; width=20% &nbsp; controls &nbsp; autoplay &nbsp; loop&gt; &nbsp; Your browser does not support video tag &nbsp; &lt;\video&gt;  <br>
+                Video will automatically play over and over from 10 to 30 seconds, but the user will be able to stop and than again start the video, either from start or from 10 sec <br>
+                <video src="Videos/National_Anthem.mp4#t=10,30" width="20%" controls autoplay loop> Your browser does not support vidio tag </video>
+            </li>
+
+        </ol>
+
+        <h2>Audio Tag/Element</h2>
+        <ul>
+            <li>Syntax: &lt;audio &nbsp; src=""&gt; &nbsp; &lt;\audio&gt; </li>
+            <li>It requires a src attribute to link to the audio file, typically .mp3 or .wave</li>
+            <li>Additional attributes:
+                <ul>
+                    <li>autoplay, controls, loop</li>
+                    <li>buffered</li>
+                    <li>muted</li>
+                    <li>volume</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Examples</h2>
+        <ol>
+            <li>
+                Syntax: &lt;audio &nbsp; src=""&gt; &nbsp; Your browser does not support audio tag &nbsp; &lt;\audio&gt; <br>
+                <audio src="Audios/Naara_e_Takbir.mp3" controls></audio>
+            </li>
+        </ol>
+        
+    </main>
+</body>
+
+</html>

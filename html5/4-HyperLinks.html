@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Using Links in HTML5</title>
+</head>
+
+<body>
+    <header>
+        <h1>Hyperlinks</h1>
+    </header>
+
+    <main>
+        Knowing how to create a linked document is important. 
+
+        <ul>
+            <li>The &lt;a&gt; &lt;\a&gt; tag stands for "Anchor Link"</li>
+            <li>
+                Needs a hyper-reference AND content
+                <ul>
+                    <li>href: Reference to location of new content</li>
+                    <li>content: The "clickable" part (text or image)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <div id="types">
+            <h2>Types of Links</h2>
+            <ol>
+                <li>Absolute Links</li>
+                <li>Relative Links</li>
+                <li>Graphical Links</li>
+                <li>Internal Links</li>
+            </ol>
+        </div>
+        
+
+        <div id="absolute">
+            <h2>Absolute Links</h2>
+            <p>Used to connect to resources in other domains. In the href attribute of the tag the full URL of the resource has to be specified.
+               One example might be your quest to list some top ranked universities. Since you want to connect to universities themselves not files
+               you wrote, you would use an absolute reference/link.</p>
+            <ul>
+                <li> <a href="https://lums.edu.pk/">Lahore University of Management Sciences (LUMS)</a> </li>
+                <li> <a href="https://nust.edu.pk/">National university of Science and Technology (NUST)</a> </li>
+                <li> <a href="http://www.pieas.edu.pk/">Pakistan Institute of Engineering & Applied Sciences (PIEAS)</a> </li>
+            </ul>
+            <p>Advantage of Absolute Links: Always linked to up-to-date information on that page. <br>
+               Disadvantage of Absolute Links: It is up to you to make sure that links do not change.</p>
+        </div>
+
+        <div id="relative">
+            <h2>Relative Links</h2>
+            <p>Used to connect to local resources/files. In the href attribute of the tag only the folder (if required, means if file is 
+               not in same folder) and filename is specified (not comlete URL). Some examples of when you might use relative link would be in
+               your navigation bar or links to your images. </p>
+            <ul>
+                <li> <a href="Images/Flag_of_Pakistan.jpeg">Flag of Pakistan</a> </li>
+            </ul>
+        </div>
+
+        <div id="graphical">
+            <h2>Graphical Links / Images as Links</h2>
+            <p>More and more people are moving away from textual prompts to ones that are graphics based. This is because the page looks 
+               "nicer". I can redo the relative link above using a picture instead of words.
+            </p>
+            <a href="Images/Flag_of_Pakistan.jpeg"> 
+                <img src="Images/Flag_of_Pakistan.jpeg" alt="Flag of Pakistan">
+            </a>
+        </div>
+
+        <div id="internal">
+            <h2>Internal Links</h2>
+            <p>Used to link to different location (not resource/file) in the same file. In href attribute of the tag the address of location
+               to be linked is specified. (i.e #...) 
+            </p>
+            <ul>
+                <li> <a href="#types" target="_blank">Types of Links</a> </li>
+                <li> <a href="#absolute">Absolute Links</a> </li>
+                <li> <a href="#relative">Relative Links</a> </li>
+                <li> <a href="#graphical">Graphical Links</a> </li>
+                <li> <a href="#internal">Internal Links</a> </li>
+            </ul>
+        </div>
+
+        <h1>Using "target" attribute with link/anchor tag</h1>
+        <ul>
+            <li> <a href="https://lums.edu.pk/">Lahore University of Management Sciences (LUMS)</a> <br>
+                 Without using taget attribute. LUMS page will open in same tab/window 
+            </li>
+
+            <li> <a href="https://lums.edu.pk/" target="_self">Lahore University of Management Sciences (LUMS)</a> <br>
+                Using attribute target="_self". It is same as above (default). LUMS page will open in same tab/window 
+            </li>
+
+            <li> <a href="https://lums.edu.pk/" target="_blank">Lahore University of Management Sciences (LUMS)</a> <br>
+                Using attribute target="_blank". LUMS page will open in new tab/window 
+            </li>
+        </ul>
+    
+    </main>
+
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tables in HTML5</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tables</h1>
+    </header>
+    
+    <main>
+        <ul>
+            <li>Tables are meant for tabular data, not for layout</li>
+            <li>Make sure to sketch your layout before you code</li>
+            <li>Decide on number of rows and columns</li>
+            <li>Decide if any cell my span multiple rows or columns</li>
+            <li>Syntax:
+                <ul>
+                    <li>&lt;table&gt; &nbsp; &lt;/table&gt;  &nbsp; (The container tag)</li>
+                    <li>&lt;tr&gt; &nbsp; &lt;/tr&gt;  &nbsp; (row)</li>
+                    <li>&lt;td&gt; &nbsp; &lt;/td&gt;  &nbsp; (column)</li>
+                </ul>
+            </li>
+            <li>We can use attribute "border" in start tag of "table tag"</li>
+            <li>To add table headings (headings of columns), we can use "&lt;th&gt; &nbsp; &lt;\th&gt;" tag</li>
+            <li>We can add captions to tables using "&lt;caption&gt; &nbsp; &lt;\caption&gt;" tag. No matter in where you place the 
+                "caption" tag inside the "table" tag, caption will be above the table. </li>
+        </ul>
+
+        <hr>
+        <h2>Examples</h2>
+
+        <h3>Simple Table </h3>
+        <table>
+            <tr> <td>Ali</td> <td>0005-BSCS-20</td> </tr>
+            <tr> <td>Bilal</td> <td>0089-BSCS-20</td> </tr>
+            <tr> <td>Muzammil</td>  <td>0308-BSCS-20</td></tr>
+        </table>
+
+        <h3>Adding Border</h3>
+        <table border="1">
+            <tr> <td>Ali</td> <td>0005-BSCS-20</td> </tr>
+            <tr> <td>Bilal</td> <td>0089-BSCS-20</td> </tr>
+            <tr> <td>Muzammil</td>  <td>0308-BSCS-20</td></tr>
+        </table>
+
+        <h3>Adding Headings</h3>
+        <table border="1">
+            <tr> <th>Std Name</th> <td>Ali</td> <td>Bilal</td> <td>Muzammil</td> </tr>
+            <tr> <th>Roll No.</th><td>0005-BSCS-20</td> <td>0089-BSCS-20</td> <td>0308-BSCS-20</td> </tr>
+        </table>
+
+        <h3>Table with diff no. of cells in each row</h3>
+        <table border="1">
+            <tr> <td>One</td> <td>Two</td>  </tr>
+            <tr> <td>Three </td><td>Four</td> <td>Five</td> <td>Six</td> </tr>
+            <tr> <td>Seven</td> </tr>
+        </table>
+
+        <h3>Spanning of Cells of Multiple rows/columns</h3>
+        <table border="1">
+            
+            <tr> <th>Child's Name</th> <th>Parent's Name</th> </tr>
+            <tr> <td rowspan="2">C1</td> <td>P1</td></tr>
+            <tr> <td>P2</td> </tr>
+            <tr> <td>C2</td> <td>P3</td> </tr>
+            <tr> <td rowspan="2">C3</td> <td>P4</td> </tr>
+            <tr> <td>P5</td> </tr>
+            <tr> <td colspan="2">C4 (Parents unkown)</td> </tr>
+            <tr> <td>C5</td> <td>P6</td> </tr>
+            <caption>This is the caption for last table. In the "table" tag, I have placed that "caption" tag at last/end, but caption has 
+                     been added above the table. </caption>
+        </table>
+    </main>
+</body>
+
+</html>

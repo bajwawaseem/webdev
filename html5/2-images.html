@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Page for Images</title>
+        <link rel="icon" type="image/png" href="Images/Pak_Army.png">  <!-- To add Favicon (web icon)-->
+    </head>
+
+    <body>
+        <!-- Default image size -->
+        <img src="Images/Flag_of_Pakistan.jpeg" alt="Flag of Pakistan"> 
+        <img src="Images/Flag_of_Pakistan.jpeg" alt="Flag of Pakistan">
+        <img src="Images/Flag_of_Pakistan.jpeg" alt="Flag of Pakistan">
+        <img src="Images/Flag_of_Pakistan.jpeg" alt="Flag of Pakistan">   <!-- Notice that image tag is an inline tag -->
+
+        <!-- Default image size -->
+        <figure>
+            <img src="Images/Flag_of_Pakistan.jpeg" alt="Flag of Pakistan">
+            <figcaption>Figure-1: Default image size</figcaption>
+        </figure>
+
+        <!-- Using width attribute in pixels -->
+        <!-- Notice that figure tag is a block tag -->
+        <figure>  
+            <img src="Images/Flag_of_Pakistan.jpeg" alt="Flag of Pakistan" width="500px">
+            <figcaption>Figure-2: Using width in pixels (500px). <br>
+                        We have hardcoded the width attribute which means we have given a size that we want it to always be. <br>
+                        We have not set the height. That's okay. The browser will automatically figure out how much it should adjust the height so it stays proportional to the width.</figcaption>
+        </figure>
+
+        <!-- Using widtgh & hight -->
+        <figure>
+            <img src="Images/Flag_of_Pakistan.jpeg" alt="Flag of Pakistan" width="500px" height="100px">
+            <figcaption>Figure-3: Using width and hight attribute (width="500px" height="100px"). <br>
+                        Usually, we use both width & hight to make sure that the picture fits inside an exactly sized box. 
+            </figcaption>
+        </figure>
+
+        <!-- Using Percentage instead of Hardcoding-->
+        <figure>
+            <img src="Images/Flag_of_Pakistan.jpeg" alt="Flag of Pakistan" width="50%">
+            <figcaption>Figure-4: Using Percentage instead of Hardcoding (width="50%"). <br>
+                        Here, 50% means 50% of container inside whcih the picture is placed. <br>
+                        When we resize the browser window, the images hows size has been set using hardcoding, stay exactly the same size. <br>
+                        But the images hows size is set using percentage, will grow and shrink with resizing browser window. 
+            </figcaption>
+        </figure>
+        
+    </body>
+</html>

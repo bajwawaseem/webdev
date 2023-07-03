@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Font Awesome Demo</title>
+        <!-- Link to Font Awesome CDN - Content Delivery Network -->
+        <script src="https://kit.fontawesome.com/610ff776e2.js" crossorigin="anonymous"></script>  <!-- JavaScript -->
+    </head>
+
+    <body>
+        
+        <i class="fa-solid fa-user fa-xs"></i>
+        <i class="fa-solid fa-user fa-md"></i>
+        <i class="fa-solid fa-user fa-lg"></i>
+        <i class="fa-solid fa-user fa-2x"></i>
+        <i class="fa-solid fa-user fa-10x"></i>
+
+        <br> <br> <br>
+        <i class="fa-solid fa-address-card fa-5x"></i>
+
+        <br> <br> <br>
+        <i class="fa-brands fa-youtube fa-5x"></i>
+ 
+        <br> <br> <br>
+        <i class="fa-brands fa-twitter fa-5x"></i>
+
+        <br> <br> <br>
+        <!-- People using screen reader will be able to read/access text but not icon -->
+        <i class="fa-brands fa-twitter"> This is icon for twitter </i> 
+
+        <br> <br> <br>
+        <!-- Icon will also be accessible to people using screen readers. -->
+        <i class="fa-brands fa-twitter" aria-label="Twitter"></i> 
+
+        <br> <br> <br>
+        <a href="https://twitter.com/"> Twitter </a> <br>
+
+        <br> <br> <br>
+        <!--If some icon is used in place of hypertext, arial will give ability to 
+            screen reader to tell where this link is going to go to read a label. -->
+        <a href="https://twitter.com/" aria-label="Twitter">Twitter</a> 
+
+        <br> <br> <br>
+        <!--There is a problem of accessibility, we have added three empty links.
+            Because icons are not accessible by default, someone who's using a screen
+            reader would have no idea where these three links are supposed to go to. -->
+        <a href="https://twitter.com/">  <i class="fa-brands fa-twitter fa-5x"></i>   </a>
+        <a href="https://pinterst.com/"> <i class="fa-brands fa-pinterest fa-5x"></i> </a>
+        <a href="https://linkedin.com/"> <i class="fa-brands fa-linkedin fa-5x"></i>  </a> 
+
+        <br> <br> <br>
+        <!-- Solution is to use aria label either in anchor tag or in the icon tag. -->
+        <a href="https://twitter.com/" aria-label="Twitter">  <i class="fa-brands fa-twitter fa-5x"></i>   </a>
+        <!-- OR -->
+        <a href="https://twitter.com/">  <i class="fa-brands fa-twitter fa-5x" aria-label="Twitter"></i>   </a>
+        
+    </body>
+</html>
