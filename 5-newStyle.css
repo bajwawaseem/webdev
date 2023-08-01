@@ -1,0 +1,47 @@
+/* First of all, i want to add some margin to my entire page */
+body{
+    margin: 2%;
+}
+
+/* Know, I want to add some space/padding b/w hyperlinks in header and the bottom boundary of header */
+header{
+    padding-bottom: 10px;
+}
+
+
+/* I want all three sections to display next to each other */
+section{
+    width: 30%;
+    display: inline-block;
+}
+
+/* Know sections are displaying next to each other, but the height of all three sections is not same. */
+section{
+    display: table-cell;
+}
+
+/* Know I want some space b/w these three sections */
+section{
+    margin-right: 10px;
+}
+
+/* There is a problem, margin is not being added by the browser. It is becuase we have specified display: table-cell property for these sections. Know, making them both to inline blocks. */
+section{
+    display: inline-block;
+}
+
+/* Margin has been added. To make these sections look as if they have same height, i am specifing float:left property */
+section{
+    float: left;
+}
+
+/* Problem: Sections are displaying as if they have same height, but they are displaying over footer (ovelapping). To avoid this overlapping, i am specifying clear:both property for footer. */
+footer{
+    clear: both;
+}
+
+/* Know i want to resize the img which is in footer, it is big, i want to make is it small. */
+img{
+
+    width: 10%; 
+}
